@@ -32,6 +32,9 @@ namespace LenguajeProgramacionIII
             this.ArregloslistBox = new System.Windows.Forms.ListBox();
             this.ejecutarbutton = new System.Windows.Forms.Button();
             this.PaiseslistBox = new System.Windows.Forms.ListBox();
+            this.OrdenarlistBox = new System.Windows.Forms.ListBox();
+            this.Ordenarbutton = new System.Windows.Forms.Button();
+            this.MaxMinbutton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ArregloslistBox
@@ -44,7 +47,7 @@ namespace LenguajeProgramacionIII
             // 
             // ejecutarbutton
             // 
-            this.ejecutarbutton.Location = new System.Drawing.Point(218, 57);
+            this.ejecutarbutton.Location = new System.Drawing.Point(30, 45);
             this.ejecutarbutton.Name = "ejecutarbutton";
             this.ejecutarbutton.Size = new System.Drawing.Size(104, 39);
             this.ejecutarbutton.TabIndex = 1;
@@ -60,11 +63,42 @@ namespace LenguajeProgramacionIII
             this.PaiseslistBox.Size = new System.Drawing.Size(132, 147);
             this.PaiseslistBox.TabIndex = 2;
             // 
+            // OrdenarlistBox
+            // 
+            this.OrdenarlistBox.FormattingEnabled = true;
+            this.OrdenarlistBox.Location = new System.Drawing.Point(410, 134);
+            this.OrdenarlistBox.Name = "OrdenarlistBox";
+            this.OrdenarlistBox.Size = new System.Drawing.Size(126, 121);
+            this.OrdenarlistBox.TabIndex = 3;
+            // 
+            // Ordenarbutton
+            // 
+            this.Ordenarbutton.Location = new System.Drawing.Point(227, 45);
+            this.Ordenarbutton.Name = "Ordenarbutton";
+            this.Ordenarbutton.Size = new System.Drawing.Size(104, 39);
+            this.Ordenarbutton.TabIndex = 4;
+            this.Ordenarbutton.Text = "Ordenar";
+            this.Ordenarbutton.UseVisualStyleBackColor = true;
+            this.Ordenarbutton.Click += new System.EventHandler(this.Ordenarbutton_Click);
+            // 
+            // MaxMinbutton
+            // 
+            this.MaxMinbutton.Location = new System.Drawing.Point(410, 45);
+            this.MaxMinbutton.Name = "MaxMinbutton";
+            this.MaxMinbutton.Size = new System.Drawing.Size(107, 39);
+            this.MaxMinbutton.TabIndex = 5;
+            this.MaxMinbutton.Text = "Maximo o Minimo";
+            this.MaxMinbutton.UseVisualStyleBackColor = true;
+            this.MaxMinbutton.Click += new System.EventHandler(this.MaxMinbutton_Click);
+            // 
             // FrmArreglos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(574, 463);
+            this.ClientSize = new System.Drawing.Size(586, 341);
+            this.Controls.Add(this.MaxMinbutton);
+            this.Controls.Add(this.Ordenarbutton);
+            this.Controls.Add(this.OrdenarlistBox);
             this.Controls.Add(this.PaiseslistBox);
             this.Controls.Add(this.ejecutarbutton);
             this.Controls.Add(this.ArregloslistBox);
@@ -79,6 +113,9 @@ namespace LenguajeProgramacionIII
         private System.Windows.Forms.ListBox ArregloslistBox;
         private System.Windows.Forms.Button ejecutarbutton;
         private System.Windows.Forms.ListBox PaiseslistBox;
+        private System.Windows.Forms.ListBox OrdenarlistBox;
+        private System.Windows.Forms.Button Ordenarbutton;
+        private System.Windows.Forms.Button MaxMinbutton;
     }
 }
 

@@ -41,5 +41,63 @@ namespace LenguajeProgramacionIII
                 PaiseslistBox.Items.Add(item);
             }
         }
+
+        private void Ordenarbutton_Click(object sender, EventArgs e)
+        {
+            //ORDENAR EL ARREGLO
+            int[] valores = {3, 5, 1, 6, 9, 10, 15, 2};
+
+            //CLASE ARRAY, FUNCION SORT: SIVER PARA ORDENAR INTERNAMENTE
+            //ORDENAR MAYOR A MENOR
+            Array.Sort(valores);
+
+            //REVIERTE LOS VALORES (Menor a mayor)
+            Array.Reverse(valores);
+
+            //foreach (var item in valores)
+            //{
+            //    OrdenarlistBox.Items.Add(item);
+            //}
+
+            //Mayor a menor
+            //valores = valores.OrderByDescending(c => c).ToArray();
+
+            foreach (var item in valores)
+            {
+                OrdenarlistBox.Items.Add(item);
+            }
+        }
+
+        private void MaxMinbutton_Click(object sender, EventArgs e)
+        {
+            int[] valores = { 3, 5, 1, 6, 9, 10, 15, 2 };
+
+            //FORMA N° 1 IDENTIFICAR LOS VALORES
+            //int maximo = valores[0];
+            //int minimo = valores[0];
+
+            //for (int i = 1; i < valores.Length; i++)
+            //{
+            //    //VALOR MAXIMO
+            //    if (valores [i] > maximo)
+            //    {
+            //        maximo = valores[i];
+            //    }
+
+            //    //VALOR MINIMO
+            //    if (valores [i] < minimo)
+            //    {
+            //        minimo = valores[i];
+            //    }
+            //}
+
+            //FORMA N° 2 IDENTIFICANDO LOS VALORES MAX Y MIN
+            Array.Sort(valores);
+
+            int maximo = valores[valores.Length - 1];
+            int minimo = valores[0];
+
+            MessageBox.Show("Valor Maximo: " + maximo + " / Valor Minimo:" + minimo);
+        }
     }
 }
