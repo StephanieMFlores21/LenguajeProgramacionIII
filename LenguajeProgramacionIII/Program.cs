@@ -16,7 +16,7 @@ namespace LenguajeProgramacionIII
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmArreglos());
+            Application.Run(new POOClase1());
         }
     }
 }

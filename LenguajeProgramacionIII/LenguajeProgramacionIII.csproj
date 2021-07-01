@@ -52,10 +52,29 @@
     <Compile Include="FrmArreglos.Designer.cs">
       <DependentUpon>FrmArreglos.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmMatrices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMatrices.Designer.cs">
+      <DependentUpon>FrmMatrices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Persona.cs" />
+    <Compile Include="POOClase1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POOClase1.Designer.cs">
+      <DependentUpon>POOClase1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmArreglos.resx">
       <DependentUpon>FrmArreglos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMatrices.resx">
+      <DependentUpon>FrmMatrices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POOClase1.resx">
+      <DependentUpon>POOClase1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
