@@ -58,6 +58,12 @@
     <Compile Include="FrmMatrices.Designer.cs">
       <DependentUpon>FrmMatrices.cs</DependentUpon>
     </Compile>
+    <Compile Include="LINQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LINQ.Designer.cs">
+      <DependentUpon>LINQ.cs</DependentUpon>
+    </Compile>
     <Compile Include="Persona.cs" />
     <Compile Include="POOClase1.cs">
       <SubType>Form</SubType>
@@ -72,6 +78,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMatrices.resx">
       <DependentUpon>FrmMatrices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LINQ.resx">
+      <DependentUpon>LINQ.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="POOClase1.resx">
       <DependentUpon>POOClase1.cs</DependentUpon>

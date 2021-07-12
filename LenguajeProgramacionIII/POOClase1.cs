@@ -78,5 +78,17 @@ namespace LenguajeProgramacionIII
             DirecciontextBox.Clear();
 
         }
+
+        //MAYOR DE EDAD (LINQ) 
+        private void MayorEdadbutton_Click(object sender, EventArgs e)
+        {
+            var listaTmeporal = personaLista.Where(a => a.Edad >= 18).ToList();
+
+            //MOSTRARÁ LOS NOMBRE DE LAS PERSONAS MAYORES DE EDAD
+            foreach (var item in listaTmeporal)
+            {
+                MayorEdadcomboBox.Items.Add(item.Nombre);
+            }
+        }
     }
 }
