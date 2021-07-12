@@ -38,6 +38,10 @@ namespace LenguajeProgramacionIII
             this.EdadtextBox = new System.Windows.Forms.TextBox();
             this.DirecciontextBox = new System.Windows.Forms.TextBox();
             this.Ejecutarbutton1 = new System.Windows.Forms.Button();
+            this.Listasbutton = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Agregarbutton = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -106,7 +110,7 @@ namespace LenguajeProgramacionIII
             // 
             // Ejecutarbutton1
             // 
-            this.Ejecutarbutton1.Location = new System.Drawing.Point(135, 230);
+            this.Ejecutarbutton1.Location = new System.Drawing.Point(17, 409);
             this.Ejecutarbutton1.Name = "Ejecutarbutton1";
             this.Ejecutarbutton1.Size = new System.Drawing.Size(102, 43);
             this.Ejecutarbutton1.TabIndex = 8;
@@ -114,11 +118,42 @@ namespace LenguajeProgramacionIII
             this.Ejecutarbutton1.UseVisualStyleBackColor = true;
             this.Ejecutarbutton1.Click += new System.EventHandler(this.Ejecutarbutton1_Click);
             // 
+            // Listasbutton
+            // 
+            this.Listasbutton.Location = new System.Drawing.Point(163, 409);
+            this.Listasbutton.Name = "Listasbutton";
+            this.Listasbutton.Size = new System.Drawing.Size(102, 43);
+            this.Listasbutton.TabIndex = 9;
+            this.Listasbutton.Text = "Listas";
+            this.Listasbutton.UseVisualStyleBackColor = true;
+            this.Listasbutton.Click += new System.EventHandler(this.Listasbutton_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(17, 229);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(392, 142);
+            this.dataGridView1.TabIndex = 10;
+            // 
+            // Agregarbutton
+            // 
+            this.Agregarbutton.Location = new System.Drawing.Point(307, 409);
+            this.Agregarbutton.Name = "Agregarbutton";
+            this.Agregarbutton.Size = new System.Drawing.Size(102, 43);
+            this.Agregarbutton.TabIndex = 11;
+            this.Agregarbutton.Text = "Agregar";
+            this.Agregarbutton.UseVisualStyleBackColor = true;
+            this.Agregarbutton.Click += new System.EventHandler(this.Agregarbutton_Click);
+            // 
             // POOClase1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(381, 306);
+            this.ClientSize = new System.Drawing.Size(429, 475);
+            this.Controls.Add(this.Agregarbutton);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.Listasbutton);
             this.Controls.Add(this.Ejecutarbutton1);
             this.Controls.Add(this.DirecciontextBox);
             this.Controls.Add(this.EdadtextBox);
@@ -130,6 +165,7 @@ namespace LenguajeProgramacionIII
             this.Controls.Add(this.label1);
             this.Name = "POOClase1";
             this.Text = "POOClase1";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -146,5 +182,8 @@ namespace LenguajeProgramacionIII
         private System.Windows.Forms.TextBox EdadtextBox;
         private System.Windows.Forms.TextBox DirecciontextBox;
         private System.Windows.Forms.Button Ejecutarbutton1;
+        private System.Windows.Forms.Button Listasbutton;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button Agregarbutton;
     }
 }

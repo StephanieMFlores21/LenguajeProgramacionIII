@@ -17,6 +17,10 @@ namespace LenguajeProgramacionIII
             InitializeComponent();
         }
 
+        //CREACION DE UNA LISTA QUE SE CARGARÁ EN EL DATAGRIPVIEW
+        List<Persona> personaLista = new List<Persona>();
+
+
         private void Ejecutarbutton1_Click(object sender, EventArgs e)
         {
             //FORMA 1 CONSTRUCTOR
@@ -39,6 +43,39 @@ namespace LenguajeProgramacionIII
             MessageBox.Show(Maria.DevolverNombreCompleto());
             //MessageBox.Show(Maria.MostrarEdad(MostrarEdad());
             MessageBox.Show(Maria.MostrarDireccion());
+
+        }
+
+        private void Listasbutton_Click(object sender, EventArgs e)
+        {   
+            //CREACION DE LISTA "PERSONA"
+            List<string> personas = new List<string>();
+
+            personas.Add("Carlos");
+            personas.Add("Mariela");
+            personas.Add("Heylin");
+
+            foreach (var item in personas )
+            {
+                MessageBox.Show(item);
+            }
+
+        }
+
+        private void Agregarbutton_Click(object sender, EventArgs e)
+        {
+            Persona persona = new Persona(NombretextBox.Text, ApellidotextBox.Text, Convert.ToInt32(EdadtextBox.Text), DirecciontextBox.Text);
+
+            personaLista.Add(persona);
+
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = personaLista;
+
+            //LIMPIEZA DE CONTROLES
+            NombretextBox.Clear();
+            ApellidotextBox.Clear();
+            EdadtextBox.Clear();
+            DirecciontextBox.Clear();
 
         }
     }
